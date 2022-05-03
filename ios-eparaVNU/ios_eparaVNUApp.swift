@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let isDebug = true
+
 @main
 struct ios_eparaVNUApp: App {
     var body: some Scene {
