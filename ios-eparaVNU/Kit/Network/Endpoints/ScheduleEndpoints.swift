@@ -9,7 +9,7 @@ import Foundation
 
 enum ScheduleEndpoints {
     case groups
-    case schedule(groupid: Int, startDate: String, endDate: String)
+    case schedule(groupid: String, startDate: String, endDate: String)
 }
 
 extension ScheduleEndpoints: Endpoint {
@@ -41,7 +41,7 @@ extension ScheduleEndpoints: Endpoint {
                 "req_mode": "group",
                 "OBJ_ID": "\(8573)",
                 "ros_text": "united",
-                "begin_date": "03.05.2022",
+                "begin_date": "05.05.2022",
                 "end_date": "13.05.2022",
                 "req_format": "json",
                 "coding_mode": "UTF8",

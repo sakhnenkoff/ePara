@@ -8,27 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject var viewModel = HomeViewViewModel()
+    @StateObject var viewModel = HomeViewModel()
     
     var body: some View {
-        Button() {
-            async {
-               try? await loadData()
-             }
-        } label: {
-            Label("Fetch Data", systemImage: "scribble")
-        }
-
+        HomeView(date: viewModel.currentSelectedDate, viewModel: viewModel)
     }
     
-    func loadData() async {
-        await viewModel.fetch()
+    // MARK: Actions
+    
+    func loadDepartaments() async {
+        await viewModel.fetchDepartaments()
+    }
+    
+    func loadGroup() async {
+        await viewModel.fetchSchedule(with: "8573", stardDate: "7.05.2022", endDate: "12.05.2022")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewModel: HomeViewModel())
     }
 }

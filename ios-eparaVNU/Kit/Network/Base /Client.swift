@@ -110,6 +110,7 @@ final class Client: NetworkClient {
             switch response.statusCode {
             case 200...299:
                 guard let decodedResponse = try? JSONDecoder().decode(responseModel, from: data) else {
+//                    print("JSON String: \(String(data: data, encoding: .utf8))")
                     return .failure(.decode)
                 }
                 return .success(decodedResponse)
@@ -123,8 +124,10 @@ final class Client: NetworkClient {
         }
     }
     
+    // iOS 14 method
+    
     func sendRequest<T: Decodable>(endpoint: Endpoint, responseModel: T.Type, completion: (Result<T, RequestError>) -> Void) {
-        print("dummy method")
+        print("currently a dummy method")
     }
 }
 

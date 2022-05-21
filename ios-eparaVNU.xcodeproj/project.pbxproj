@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D707817528258CF1006003EB /* DateFormatter + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D707817428258CF1006003EB /* DateFormatter + Extensions.swift */; };
 		D7284EE72821431200500C48 /* ScheduleModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EE62821431200500C48 /* ScheduleModels.swift */; };
 		D7284EEF2821743D00500C48 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EEE2821743D00500C48 /* Endpoint.swift */; };
 		D7284EF22821755A00500C48 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EF12821755A00500C48 /* RequestError.swift */; };
 		D7284EF52821766D00500C48 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EF42821766D00500C48 /* Client.swift */; };
 		D7284EF728217E4A00500C48 /* ScheduleEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EF628217E4A00500C48 /* ScheduleEndpoints.swift */; };
 		D7284EF928217E5C00500C48 /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7284EF828217E5C00500C48 /* ScheduleService.swift */; };
-		D7A925362801DA3400F9EBC0 /* HomeTabViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A925352801DA3400F9EBC0 /* HomeTabViewViewModel.swift */; };
+		D743640E28369E70008B41F7 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743640D28369E70008B41F7 /* CustomDatePicker.swift */; };
+		D743641028369E94008B41F7 /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D743640F28369E94008B41F7 /* DateValue.swift */; };
+		D74364122836A816008B41F7 /* PickerDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74364112836A816008B41F7 /* PickerDayView.swift */; };
+		D74364152836B461008B41F7 /* ClassCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74364142836B461008B41F7 /* ClassCellView.swift */; };
+		D74364172837897C008B41F7 /* Binding + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74364162837897C008B41F7 /* Binding + Extensions.swift */; };
+		D7970AD1283901290065DAAA /* Modifier + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7970AD0283901290065DAAA /* Modifier + Extensions.swift */; };
+		D7970AD3283911950065DAAA /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7970AD2283911950065DAAA /* String + Extensions.swift */; };
+		D7970AD6283919FA0065DAAA /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = D7970AD5283919FA0065DAAA /* Introspect */; };
+		D79818AF2833A89E0038A655 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79818AE2833A89E0038A655 /* Colors.xcassets */; };
+		D79818B32833AB770038A655 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79818B22833AB770038A655 /* User.swift */; };
+		D79818B72833AC650038A655 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79818B62833AC650038A655 /* HomeView.swift */; };
+		D79818B92833AD0E0038A655 /* Color + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79818B82833AD0D0038A655 /* Color + Extensions.swift */; };
+		D7A925362801DA3400F9EBC0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A925352801DA3400F9EBC0 /* HomeViewModel.swift */; };
 		D7C57D4C28048F3F00090F5C /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C57D4B28048F3F00090F5C /* UserDefaultsManager.swift */; };
 		D7EAFB882801CF2D009E03E1 /* ios_eparaVNUApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EAFB872801CF2D009E03E1 /* ios_eparaVNUApp.swift */; };
 		D7EAFB8A2801CF2D009E03E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EAFB892801CF2D009E03E1 /* ContentView.swift */; };
@@ -35,13 +48,26 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D707817428258CF1006003EB /* DateFormatter + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter + Extensions.swift"; sourceTree = "<group>"; };
 		D7284EE62821431200500C48 /* ScheduleModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleModels.swift; sourceTree = "<group>"; };
 		D7284EEE2821743D00500C48 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D7284EF12821755A00500C48 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		D7284EF42821766D00500C48 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		D7284EF628217E4A00500C48 /* ScheduleEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEndpoints.swift; sourceTree = "<group>"; };
 		D7284EF828217E5C00500C48 /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
-		D7A925352801DA3400F9EBC0 /* HomeTabViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabViewViewModel.swift; sourceTree = "<group>"; };
+		D743640D28369E70008B41F7 /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		D743640F28369E94008B41F7 /* DateValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		D74364112836A816008B41F7 /* PickerDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerDayView.swift; sourceTree = "<group>"; };
+		D74364132836B0CB008B41F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D74364142836B461008B41F7 /* ClassCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCellView.swift; sourceTree = "<group>"; };
+		D74364162837897C008B41F7 /* Binding + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding + Extensions.swift"; sourceTree = "<group>"; };
+		D7970AD0283901290065DAAA /* Modifier + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Modifier + Extensions.swift"; sourceTree = "<group>"; };
+		D7970AD2283911950065DAAA /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		D79818AE2833A89E0038A655 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D79818B22833AB770038A655 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D79818B62833AC650038A655 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D79818B82833AD0D0038A655 /* Color + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extensions.swift"; sourceTree = "<group>"; };
+		D7A925352801DA3400F9EBC0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D7C57D4B28048F3F00090F5C /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		D7EAFB842801CF2D009E03E1 /* єПара.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "єПара.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7EAFB872801CF2D009E03E1 /* ios_eparaVNUApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_eparaVNUApp.swift; sourceTree = "<group>"; };
@@ -55,12 +81,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7970AD6283919FA0065DAAA /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D707817228258CD7006003EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D707817328258CE4006003EB /* Extensions */,
+				D7A9253D2801E61800F9EBC0 /* Services */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D707817328258CE4006003EB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D707817428258CF1006003EB /* DateFormatter + Extensions.swift */,
+				D79818B82833AD0D0038A655 /* Color + Extensions.swift */,
+				D74364162837897C008B41F7 /* Binding + Extensions.swift */,
+				D7970AD0283901290065DAAA /* Modifier + Extensions.swift */,
+				D7970AD2283911950065DAAA /* String + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D7284EE82821736E00500C48 /* Base  */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +146,30 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		D79818B02833A8AE0038A655 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D7EAFB8B2801CF2F009E03E1 /* Assets.xcassets */,
+				D79818AE2833A89E0038A655 /* Colors.xcassets */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		D79818B12833AB5A0038A655 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D79818B22833AB770038A655 /* User.swift */,
+				D743640F28369E94008B41F7 /* DateValue.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D7A925322801D9F400F9EBC0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D7C57D4D2804984800090F5C /* Common */,
 				D7EAFB892801CF2D009E03E1 /* ContentView.swift */,
+				D79818B62833AC650038A655 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,7 +177,7 @@
 		D7A925332801DA0300F9EBC0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D7A925352801DA3400F9EBC0 /* HomeTabViewViewModel.swift */,
+				D7A925352801DA3400F9EBC0 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -118,6 +185,7 @@
 		D7A925372801DA7700F9EBC0 /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				D79818B12833AB5A0038A655 /* Models */,
 				D7284EEC282173B600500C48 /* Network */,
 			);
 			path = Kit;
@@ -142,6 +210,9 @@
 		D7C57D4D2804984800090F5C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D743640D28369E70008B41F7 /* CustomDatePicker.swift */,
+				D74364112836A816008B41F7 /* PickerDayView.swift */,
+				D74364142836B461008B41F7 /* ClassCellView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -165,12 +236,13 @@
 		D7EAFB862801CF2D009E03E1 /* ios-eparaVNU */ = {
 			isa = PBXGroup;
 			children = (
+				D74364132836B0CB008B41F7 /* Info.plist */,
 				D7A925372801DA7700F9EBC0 /* Kit */,
-				D7A9253D2801E61800F9EBC0 /* Services */,
+				D707817228258CD7006003EB /* Utils */,
 				D7A925332801DA0300F9EBC0 /* ViewModels */,
 				D7A925322801D9F400F9EBC0 /* Views */,
 				D7EAFB872801CF2D009E03E1 /* ios_eparaVNUApp.swift */,
-				D7EAFB8B2801CF2F009E03E1 /* Assets.xcassets */,
+				D79818B02833A8AE0038A655 /* SupportFiles */,
 				D7EAFB8D2801CF2F009E03E1 /* Preview Content */,
 			);
 			path = "ios-eparaVNU";
@@ -201,6 +273,9 @@
 			dependencies = (
 			);
 			name = "ios-eparaVNU";
+			packageProductDependencies = (
+				D7970AD5283919FA0065DAAA /* Introspect */,
+			);
 			productName = "ios-eparaVNU";
 			productReference = D7EAFB842801CF2D009E03E1 /* єПара.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +305,9 @@
 				uk,
 			);
 			mainGroup = D7EAFB7B2801CF2D009E03E1;
+			packageReferences = (
+				D7970AD4283919FA0065DAAA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = D7EAFB852801CF2D009E03E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -244,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D79818AF2833A89E0038A655 /* Colors.xcassets in Resources */,
 				D7EAFB8F2801CF2F009E03E1 /* Preview Assets.xcassets in Resources */,
 				D7EAFB8C2801CF2F009E03E1 /* Assets.xcassets in Resources */,
 			);
@@ -257,15 +336,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7284EF728217E4A00500C48 /* ScheduleEndpoints.swift in Sources */,
+				D79818B92833AD0E0038A655 /* Color + Extensions.swift in Sources */,
 				D7284EF22821755A00500C48 /* RequestError.swift in Sources */,
+				D79818B72833AC650038A655 /* HomeView.swift in Sources */,
+				D7970AD1283901290065DAAA /* Modifier + Extensions.swift in Sources */,
 				D7284EE72821431200500C48 /* ScheduleModels.swift in Sources */,
+				D743641028369E94008B41F7 /* DateValue.swift in Sources */,
+				D743640E28369E70008B41F7 /* CustomDatePicker.swift in Sources */,
+				D707817528258CF1006003EB /* DateFormatter + Extensions.swift in Sources */,
 				D7284EF928217E5C00500C48 /* ScheduleService.swift in Sources */,
-				D7A925362801DA3400F9EBC0 /* HomeTabViewViewModel.swift in Sources */,
+				D74364122836A816008B41F7 /* PickerDayView.swift in Sources */,
+				D7A925362801DA3400F9EBC0 /* HomeViewModel.swift in Sources */,
+				D74364172837897C008B41F7 /* Binding + Extensions.swift in Sources */,
+				D7970AD3283911950065DAAA /* String + Extensions.swift in Sources */,
 				D7EAFB8A2801CF2D009E03E1 /* ContentView.swift in Sources */,
 				D7C57D4C28048F3F00090F5C /* UserDefaultsManager.swift in Sources */,
+				D79818B32833AB770038A655 /* User.swift in Sources */,
 				D7284EEF2821743D00500C48 /* Endpoint.swift in Sources */,
 				D7284EF52821766D00500C48 /* Client.swift in Sources */,
 				D7EAFB882801CF2D009E03E1 /* ios_eparaVNUApp.swift in Sources */,
+				D74364152836B461008B41F7 /* ClassCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,12 +489,13 @@
 				DEVELOPMENT_TEAM = C5N8H89WX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-eparaVNU/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,12 +520,13 @@
 				DEVELOPMENT_TEAM = C5N8H89WX7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ios-eparaVNU/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +562,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7970AD4283919FA0065DAAA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7970AD5283919FA0065DAAA /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7970AD4283919FA0065DAAA /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7EAFB7C2801CF2D009E03E1 /* Project object */;
 }

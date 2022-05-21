@@ -7,13 +7,23 @@
 
 import SwiftUI
 
-let isDebug = true
+let isDebug = false
 
 @main
 struct ios_eparaVNUApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: HomeViewModel())
         }
     }
+    
+    init() {
+        configureSupportViews()
+    }
+    
+    private func configureSupportViews() {
+        // List
+//        UITableView.appearance().backgroundColor = .clear
+    }
+    
 }

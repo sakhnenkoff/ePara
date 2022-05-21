@@ -10,8 +10,8 @@ import Foundation
 protocol ScheduleServicing {
     var networkClient: NetworkClient { get }
     
-//    func fetchScheduleForGroup(id: Int) async -> Result<Export, RequestError>
-    func fetchDepartments() async -> Result<Export, RequestError>
+    func fetchScheduleForGroup(id: String, startDate: String, endDate: String) async -> Result<ApiResponse, RequestError>
+    func fetchDepartments() async -> Result<ApiResponse, RequestError>
 }
 
 struct ScheduleService: ScheduleServicing {
@@ -24,12 +24,22 @@ struct ScheduleService: ScheduleServicing {
     
     // MARK: Actions
     
-//    func fetchScheduleForGroup(id: Int) async -> Result<Export, RequestError> {
-//
-//    }
+    func fetchDepartments() async -> Result<ApiResponse, RequestError> {
+        if #available(iOS 15.0, *) {
+            return await networkClient.sendRequest(endpoint: ScheduleEndpoints.groups, responseModel: ApiResponse.self)
+        } else {
+            // Fallback on earlier versions
+            return .failure(.unknown)
+        }
+    }
     
-    func fetchDepartments() async -> Result<Export, RequestError> {
-        return await networkClient.sendRequest(endpoint: ScheduleEndpoints.groups, responseModel: Export.self)
+    func fetchScheduleForGroup(id: String, startDate: String, endDate: String) async -> Result<ApiResponse, RequestError> {
+        if #available(iOS 15.0, *) {
+            return await networkClient.sendRequest(endpoint: ScheduleEndpoints.schedule(groupid: id, startDate: startDate , endDate: endDate), responseModel: ApiResponse.self)
+        } else {
+            // Fallback on earlier versions
+            return .failure(.unknown)
+        }
     }
 
 }
