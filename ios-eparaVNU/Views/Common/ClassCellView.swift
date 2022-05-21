@@ -17,7 +17,7 @@ struct ClassCellView: View {
             VStack(alignment: .leading, spacing: 8) {
                 Text(lesson.lessonTime)
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.accentRed)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text(lesson.lessonDescription)
                     .font(.system(size: 14))

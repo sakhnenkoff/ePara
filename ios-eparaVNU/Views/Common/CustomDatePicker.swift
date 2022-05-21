@@ -13,7 +13,7 @@ struct CustomDatePicker: View {
     @State var animatedStates: [Bool] = Array(repeating: false, count: 2)
     
     let days: [String] =
-    ["Mon" , "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    ["Пн" , "Вт", "Ср", "Чт", "Пт", "Сб", "Нд"]
     
     let columns = Array(repeating: GridItem(.flexible()), count: 7)
 
@@ -54,14 +54,13 @@ struct CustomDatePicker: View {
                         .foregroundColor(.white)
                 }
             }
-            .frame(height: 20)
+            .frame(height: 8)
             
             Rectangle()
                 .fill(.white.opacity(0.4))
                 .frame(width: animatedStates[0] ? nil: 0, height: 1)
-                .padding(.vertical, 4)
             
-            LazyVGrid(columns: columns, spacing: 20) {
+            LazyVGrid(columns: columns, spacing: 18) {
                 ForEach(extractDate()) { value in
                     PickerDayView(currentDate: $currentDate, value: value)
                         .onTapGesture {
@@ -69,8 +68,6 @@ struct CustomDatePicker: View {
                         }
                 }
             }
-            
-            // MARK: Tasks View
             
         }
         .padding()
@@ -88,7 +85,7 @@ struct CustomDatePicker: View {
         
     func getCurrentMonth() -> Date {
         let calendar = Calendar.current
-        guard let currentMonth = calendar.date(byAdding: .month, value: currentMonth, to: Date()) else {
+        guard let currentMonth = calendar.date(byAdding: .month, value: self.currentMonth, to: Date()) else {
             return Date()
         }
         return currentMonth
@@ -104,7 +101,6 @@ struct CustomDatePicker: View {
     
     func extractDate() -> [DateValue] {
         let calendar = Calendar.current
-        
         let currentMonth = getCurrentMonth()
         
         var days = currentMonth.getAllDates().compactMap() { date -> DateValue in
@@ -114,7 +110,7 @@ struct CustomDatePicker: View {
         
         // adding offset days to get exact week day
         
-        let firstWeekDay = calendar.component(.weekday, from: days.first?.date ?? Date())
+        let firstWeekDay = calendar.component(.weekday, from: currentMonth ?? Date())
         
         for _ in 0..<firstWeekDay - 1 {
             days.insert(.init(day: -1, date: Date()), at: 0)

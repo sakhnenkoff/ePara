@@ -82,17 +82,34 @@ struct HomeView: View {
                         
                         // MARK: ClassesListView
     
-                        List {
-                            ForEach(viewModel.currenltyDisplayedLessons) { lesson in
-                                ClassCellView(lesson: lesson)
+                        if !viewModel.currenltyDisplayedLessons.isEmpty {
+                            List {
+                                    ForEach(viewModel.currenltyDisplayedLessons) { lesson in
+                                        ClassCellView(lesson: lesson)
+                                    }
                             }
-                        }
-                        .listStyle(.insetGrouped)
-                        .cornerRadius(30)
-                        .introspectTableView {
-                            $0.showsVerticalScrollIndicator = false
-                        }
-                        
+                            .listStyle(.insetGrouped)
+                            .cornerRadius(30)
+                            .introspectTableView {
+                                $0.showsVerticalScrollIndicator = false
+                            }
+                            } else {
+                                VStack(alignment: .center, spacing: 8) {
+                                    Image(systemName: "calendar.badge.clock")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .foregroundColor(Color(.systemGray5))
+                                    .frame(width: 40, height: 40, alignment: .center)
+                                    
+                                    Text("cьогодні без пар")
+                                        .font(.caption)
+                                        .foregroundColor(Color(.systemGray4))
+                                    
+                                }
+                                Spacer()
+                            }
+    
+                            
                     }
                     .padding([.horizontal, .top])
                     .frame(maxHeight: .infinity, alignment: .top)
